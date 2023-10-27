@@ -1,0 +1,72 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBExfl4E84T_v5UGzshLsLUWW21IoXk9iF_g&usqp=CAU");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+
+.box {
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 900px;
+    text-align: center;
+}
+
+input[type="text"] {
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 5px 5px 0 0;
+    border-width: 3px;
+    border-color: #ffffff;
+    background-color: black;
+}
+
+.text-box {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    border-width: 1px;
+    color: white;
+    margin: 10px 10px 10px 10px;
+}
+
+.keys {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-width: 1px;
+    border-color: #ffffff;
+    margin: 10px 10px 10px 10px;
+    color:white;
+
+
+
+
+}
+
+
+.text-box button {
+    background-color: #000000;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color:black;
+}
